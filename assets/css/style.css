@@ -5,6 +5,7 @@
 html {
     min-height: 100%;
     position: relative;
+  
 }
 
 body {
@@ -16,18 +17,23 @@ body {
 }
 
 header {
+    position: fixed;
     margin: 0%;
+    padding-bottom: 0%;
     text-align: center;
-    height: 15%;
+    height: 5.2rem;
     background-color: azure;
-    padding-top: 0;
+    padding: 0;
     width: 100%;
     box-shadow: 0 4px 4px rgb(159, 175, 175);
 }
 
+.indexheader {
+    margin-top: 0px;
+}
 
 .indexheader h1 {
-    font-size: 8rel;
+    font-size: 5rem;
     color: rgb(0, 0, 0);
 }
 
@@ -48,3 +54,6 @@ footer {
     font-size: 8rel;
     color: rgb(0, 0, 0);
 }
+
+/* Game area style */
+
