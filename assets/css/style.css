@@ -44,7 +44,7 @@ footer {
     left: 0;
     bottom: 0;
     box-sizing: border-box;
-    height: 15%;
+    height: 10vh;
     padding-top: 2px;
     box-shadow: 0 -4px 4px rgb(159, 175, 175);
     text-align: center;
@@ -75,14 +75,27 @@ footer {
 
 .buttons-div {
     padding-top: .1rem;
-    padding-left: auto;
-    padding-right: auto;
-   
     align-items: center;
     justify-content: center;
     display: flex;
-
 }
+
+.buttons-div button {
+    margin: 0 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250, 247, 242);
+    color: black;
+    border-style: ridge;
+    cursor: pointer;
+    
+}
+
+.buttons-div button:hover {
+    background-color: rgb(133, 91, 0);
+    color: aliceblue;    
+}
+
 
 .player {
     float: left;
@@ -97,6 +110,7 @@ footer {
 #player-image {
     max-width: 25vw;
 }
+
 #opponent-image {
     max-width: 25vw;
 }

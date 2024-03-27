@@ -45,7 +45,4 @@ function playGame(playerChoice) {
 
 }
 
-/**
- * Who won? 
- */
 
