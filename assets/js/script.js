@@ -1,48 +1,59 @@
 /**
  * Constants for DOM elements
- * and possible choices
  */
 
-const buttons = document.getElementsByClassName("control");
-const playerScore = document.getElementById("player-score");
-const opponentScore = document.getElementById("opponent-score");
-const playerImage = document.getElementById("player-image");
-const opponentImage = document.getElementById("opponent-image");
-const messages = document.getElementById("messages");
 const choices = ["rock", "paper", "scissors"];
-
-/**
- * Event listeners for buttons
- */
-
-
-for (let button of buttons) {
-    button.addEventListener("click", function () {
-        let playerChoice = this.getAttribute("choice");
-        playGame(playerChoice);
-    }); }
-
-
+const playerDisplay = document.getElementById("playerDisplay");
+const opponentDisplay = document.getElementById("opponentDisplay");
+const resultDisplay = document.getElementById("resultDisplay");
+const playerScoreDisplay = document.getElementById("playerScoreDisplay");
+const opponentScoreDisplay = document.getElementById("opponentScoreDisplay");
 
 
 /**
- *Game function, selected button value
+ * Game function
  */
 
-function playGame(playerChoice) {
+let playerScore = 0;
+let opponentScore = 0;
 
-    playerImage.src = `assets/images/${choices[playerChoice]}.png`;
-    playerImage.alt = choices[playerChoice];
+function playGame(playerChoice){
 
-    let opponentChoice = Math.floor(Math.random() * 3);
+    const opponentChoise = choices[Math.floor(Math.random() * 3)];
+    let result = "";
 
-    opponentImage.src = `assets/images/${choices[opponentChoice]}.png`;
-    opponentImage.alt = choices[opponentChoice];
+    if (playerChoice === opponentChoise) {
+        result = "You picked the same!";
+    }
+    else {
+        switch (playerChoice) {
+            case "rock":
+                result = (opponentChoise === "scissors") ? "YES! you won!" : "Oh no!";
+                break;
+            case "paper":
+                result = (opponentChoise === "rock") ? "YES! you won!" : "Oh no!";
+                break;
+            case "scissors":
+                result = (opponentChoise === "paper") ? "YES! you won!" : "Oh no!";
+                break;
 
-    let result = checkWinner(choices[opponentChoice], choices[playerChoice]);
+        }
+    }
 
-    updateScores(result);
+    playerDisplay.textContent = `Player: ${playerChoice}`;
+    opponentDisplay.textContent = `Opponent: ${opponentChoice}`;
+    resultDisplay.textContent = result;
+
+    switch (result) {
+        case "YES! you won!":
+            playerScore++;
+            playerScoreDisplay.textContent = playerScore;
+            break;
+        case "Oh no!":
+            opponentScore++;
+            opponentScoreDisplay.textContent = opponentScore;
+            break;
+    }
+
 
 }
-
-

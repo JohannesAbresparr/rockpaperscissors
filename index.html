@@ -30,30 +30,33 @@
     </header>
 
     <span id="makemove">
-        <h6>Make your move:</h6>
+        <h4>Make your move:</h4>
     </span>
 
-    <section class="game-area">
-        <div class="buttons-div">
+    <section class="buttons">
 
-            <button aria-label="rock" choice="0" class="control">ROCK</button>
-            <button aria-label="paper" choice="1" class="control">PAPER</button>
-            <button aria-label="scissors" choice="2" class="control">SCISSORS</button>
+        <div class="choises" id="buttons-div">
+            <button aria-label="rock" onclick="playGame('rock')" class="control"><img
+                    src="assets/images/rock.png">rock</button>
+            <button aria-label="paper" onclick="playGame('paper')" class="control"><img
+                    src="assets/images/paper.png">paper</button>
+            <button aria-label="scissors" onclick="playGame('scissors')" class="control"><img
+                    src="assets/images/scissors.png">scissors</button>
         </div>
-
-        <div id="messages">messages</div>
-
-        <div class="player">
-            <h4 class="scores">Your score:<span id="player-score">0</span></h4>
-            <img id="player-image" src="assets/images/rockpaperscissors.png" alt="rock paper scissors">
-        </div>
-        <div class="opponent">
-            <h4 class="scores">Opponent score:<span id="opponent-score">0</span></h4>
-            <img id="opponent-image" src="assets/images/rockpaperscissors.png" alt="rock paper scissors">
-        </div>
-
+    </section>
+    <section class="choisesdivs">
+        <div id="playerDisplay">Player: </div>
+        <div id="opponentDisplay">Opponent: </div>
 
     </section>
+    <div id="resultDisplay">test</div>
+    <div class="scoreDisplay">Your Score:
+        <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Opponent Score:
+        <span id="opponentScoreDisplay">0</span>
+    </div>
 
 
 
