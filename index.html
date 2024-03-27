@@ -28,32 +28,41 @@
     <header id="indexheader">
         <h1>ROCK PAPER SCISSORS</h1>
     </header>
+
+    <span id="makemove"><h6>Make your move:</h6></span>
+    
     <section class="game-area">
-        <div>
-            <h6>Make your move:</h6>
-            <br>
-            <button aria-label="rock" choise="0" class="control">ROCK</button>
-            <button aria-label="paper" choise="1" class="control">PAPER</button>
-            <button aria-label="scissors" choise="2" class="control">SCISSORS</button>
+        <div class="buttons-div">
+            
+            
+            <button aria-label="rock" choice="0" class="control">ROCK</button>
+            <button aria-label="paper" choice="1" class="control">PAPER</button>
+            <button aria-label="scissors" choice="2" class="control">SCISSORS</button>
         </div>
 
-        <div id="messages"></div>
+        <div id="messages">messages</div>
 
         <div class="player">
             <h4 class="scores">Your score: <span id="player-score">0</span></h4>
-            <img id="player-image" src="" alt="rock paper scissors">
+            <img id="player-image" src="assets/images/rockpaperscissors.png" alt="rock paper scissors">
         </div>
         <div class="opponent">
             <h4 class="scores">Opponent score: <span id="opponent-score">0</span></h4>
-            <img id="opponent-image" src="" alt="rock paper scissors">
+            <img id="opponent-image" src="assets/images/rockpaperscissors.png" alt="rock paper scissors">
         </div>
+
+
     </section>
+    
+
 
 
 
     <footer id="indexfooter">
+        <div>
+            <button id="reset" aria-label="reset game">Reset the game</button>
+        </div>
         <p>Thank you for playing!</p>
-        <p>&copy; Johannes Abresparr 2024</p>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
