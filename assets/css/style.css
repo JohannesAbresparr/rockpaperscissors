@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
-
 /* General page style */
-
 html {
     min-height: 100%;
     position: relative;
+  
 
 }
 
@@ -16,41 +15,40 @@ body {
     margin: 0;
     background-color: rgb(175, 218, 218);
     margin-block: 0px;
-
 }
 
 header {
+    position: fixed;
+    margin: 0%;
+    padding-bottom: 0%;
     margin-top: 0px;
     text-align: center;
+    height: 5.2rem;
     height: auto;
     background-color: azure;
     padding: 0;
     width: 100%;
     box-shadow: 0 4px 4px rgb(159, 175, 175);
 }
-
 .indexheader {
     margin-top: 0px;
 }
-
 .indexheader h1 {
     font-size: 5rem;
     color: rgb(0, 0, 0);
 }
-
 footer {
     position: absolute;
     width: 100vw;
     left: 0;
     bottom: 0;
     box-sizing: border-box;
-    height: 10vh;
+    height: 15%;
     padding-top: 2px;
     box-shadow: 0 -4px 4px rgb(159, 175, 175);
     text-align: center;
     background-color: azure;
 }
-
 .indexfooter p {
     font-size: 8rel;
     color: rgb(0, 0, 0);
@@ -60,11 +58,10 @@ footer {
 
 #makemove {
     font-family: inherit;
-    color: rgb(229, 247, 225);
+    color: rgb(255, 0, 106);
     display: flex;
     align-content: center;
     justify-content: center;
-    font-size: 1.8rem;
 
 }
 
@@ -74,38 +71,30 @@ footer {
 
 }
 
-#buttons-div {
+.buttons-div {
     padding-top: .1rem;
+    padding-left: auto;
+    padding-right: auto;
+
     align-items: center;
     justify-content: center;
     display: flex;
-    
-}
-
-#buttons-div button {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 .5em;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(250, 247, 242);
-    border-style: ridge;
-    cursor: pointer;
 
 }
-#buttons-div button img {
-    max-width: 6rem;
+
+.player {
+    float: left;
+    margin-left: 5%;
 }
 
-#buttons-div button:hover {
-    background-color: rgb(136, 187, 89);
-   
+.opponent {
+    float: right;
+    margin-right: 5%;
 }
 
-.choisesdivs {
-    padding-top: 1rem;
+#player-image {
+    max-width: 25vw;
 }
-
-
-
-
+#opponent-image {
+    max-width: 25vw;
+}
