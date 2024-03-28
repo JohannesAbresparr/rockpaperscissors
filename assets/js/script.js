@@ -11,21 +11,17 @@ const playerImage = document.getElementById("player-image");
 const opponentImage = document.getElementById("opponent-image");
 const messages = document.getElementById("messages");
 const choises = ["rock", "paper", "scissors"];
-const choices = ["rock", "paper", "scissors"];
+
 
 /**
  * Event listeners for buttons
  */
-
 
 for (let button of buttons) {
     button.addEventListener("click", function () {
         let playerChoise = this.getAttribute("choise");
         playGame(playerChoise);
     });
-        let playerChoice = this.getAttribute("choice");
-        playGame(playerChoice);
-    }); }
 
 
 }
@@ -35,24 +31,24 @@ for (let button of buttons) {
  *Game function, selected button value
  */
 
-function playGame(playerChoise) {
+
 function playGame(playerChoice) {
 
     playerImage.src = `assets/images/${choises[playerChoise]}.png`;
     playerImage.alt = choises[playerChoise];
+    
     playerImage.src = `assets/images/${choices[playerChoice]}.png`;
     playerImage.alt = choices[playerChoice];
 
     let opponentChoise = Math.floor(Math.random() * 3);
-    let opponentChoice = Math.floor(Math.random() * 3);
-
+   
     opponentImage.src = `assets/images/${choises[playerChoise]}.png`;
     opponentImage.alt = choises[opponentChoise];
     opponentImage.src = `assets/images/${choices[opponentChoice]}.png`;
     opponentImage.alt = choices[opponentChoice];
 
     let result = checkWinner(choises[opponentChoise], choises[playerChoise]);
-    let result = checkWinner(choices[opponentChoice], choices[playerChoice]);
+  
 
     updateScores(result);
 

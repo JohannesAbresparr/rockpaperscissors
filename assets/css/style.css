@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
 /* General page style */
 html {
     min-height: 100%;
@@ -67,7 +68,7 @@ footer {
 
 .game-area {
 
-    width: 80vw;
+    max-width: 80%;
 
 }
 
@@ -93,8 +94,8 @@ footer {
 }
 
 #player-image {
-    max-width: 25vw;
+    max-width: 40%;
 }
 #opponent-image {
-    max-width: 25vw;
+    max-width: 40%;
 }
