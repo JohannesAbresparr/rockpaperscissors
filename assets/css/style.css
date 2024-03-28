@@ -4,7 +4,7 @@
 html {
     min-height: 100%;
     position: relative;
-  
+
 
 }
 
@@ -31,25 +31,29 @@ header {
     width: 100%;
     box-shadow: 0 4px 4px rgb(159, 175, 175);
 }
+
 .indexheader {
     margin-top: 0px;
 }
+
 .indexheader h1 {
     font-size: 5rem;
     color: rgb(0, 0, 0);
 }
+
 footer {
     position: absolute;
     width: 100vw;
     left: 0;
     bottom: 0;
     box-sizing: border-box;
-    height: 15%;
+    height: 10%;
     padding-top: 2px;
     box-shadow: 0 -4px 4px rgb(159, 175, 175);
     text-align: center;
     background-color: azure;
 }
+
 .indexfooter p {
     font-size: 8rel;
     color: rgb(0, 0, 0);
@@ -60,35 +64,32 @@ footer {
 #makemove {
     font-family: inherit;
     color: rgb(255, 0, 106);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
 }
 
 .game-area {
 
+    padding-top: 10%;
     max-width: 80%;
+    display: flex;
 
 }
 
 .buttons-div {
     padding-top: .1rem;
-    padding-left: auto;
-    padding-right: auto;
+    padding-bottom: .1rem;
+    display: block;
 
-    align-items: center;
-    justify-content: center;
-    display: flex;
 
 }
 
 .player {
+    padding-top: .1rem;
     float: left;
     margin-left: 5%;
 }
 
 .opponent {
+    padding-top: .1rem;
     float: right;
     margin-right: 5%;
 }
@@ -96,6 +97,7 @@ footer {
 #player-image {
     max-width: 40%;
 }
+
 #opponent-image {
     max-width: 40%;
 }
