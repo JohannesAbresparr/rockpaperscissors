@@ -22,46 +22,61 @@
 </head>
 
 <body>
-    <header id="indexheader">
+    <!--
+<header>
         <h1>ROCK PAPER SCISSORS</h1>
     </header>
 
+    -->
+
+
     <section class="game-area">
-        <h6 id="makemove">Make your move:</h6>
-        
 
-        <div class="buttons-div">
-            
-            <button aria-label="rock" choise="0" class="control">ROCK</button>
-            <button aria-label="paper" choise="1" class="control">PAPER</button>
-            <button aria-label="scissors" choise="2" class="control">SCISSORS</button>
+        <div class="score">
+            <div class="player-score">
+                <h2>Your Points:</h2>
+                <p>0</p>
 
+            </div>
+            <div class="computer-score">
+                <h2>Opponent Points:</h2>
+                <p>0</p>
+
+            </div>
         </div>
 
-        <div class="player">
-            <h4 class="scores">Your score: <span id="player-score">0</span></h4>
-            <img id="player-image" src="assets/images/rockpaperscissors.png" alt="rock paper scissors">
-        </div>
-        <div class="opponent">
-            <h4 class="scores">Opponent score: <span id="opponent-score">0</span></h4>
+        <div class="game">
+            <h3 class="message">info</h3>
+            <div class="images">
+                <img class="playerchoise" src="assets/images/rock.png" alt="">
+                <img class="computerchoise" src="assets/images/rock.png" alt="">
+            </div>
 
-            <img id="opponent-image" src="assets/images/rockpaperscissors.png" alt="rock paper scissors">
+            <h6>Make your move:</h6>
+
+            <div class="options">
+                <button class="rock" aria-label="rock">rock</button>
+                <button class="paper" aria-label="paper">paper</button>
+                <button class="scissors" aria-label="scissors">scissors</button>
+            </div>
         </div>
+
+
+
+
 
 
     </section>
 
 
 
-
-
+    <!--
     <footer id="indexfooter">
-        <div>
-            <button id="reset" aria-label="reset game">Reset the game</button>
-        </div>
+
         <p>Thank you for playing!</p>
 
-    </footer>
+    </footer>   -->
+
     <script src="assets/js/script.js"></script>
 </body>
 

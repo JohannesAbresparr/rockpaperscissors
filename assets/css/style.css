@@ -3,19 +3,15 @@
 /* General page style */
 html {
     min-height: 100%;
-    position: relative;
-
-
+    margin; 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Protest Revolution', sans-serif;
-    margin: 0;
     background-color: rgb(175, 218, 218);
-    margin-block: 0px;
+    height: 100vh;
 }
 
 header {
@@ -32,14 +28,35 @@ header {
     box-shadow: 0 4px 4px rgb(159, 175, 175);
 }
 
-.indexheader {
-    margin-top: 0px;
+.player-score, .computer-score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-.indexheader h1 {
-    font-size: 5rem;
-    color: rgb(0, 0, 0);
+.score {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.game-area{
+    width: 100vw;
+    margin-top: 5.3rem;
+    margin-bottom: 5.1vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.game-area img {
+    max-width: 30%;
+    padding: 5px;
+}
+
 
 footer {
     position: absolute;
@@ -47,57 +64,8 @@ footer {
     left: 0;
     bottom: 0;
     box-sizing: border-box;
-    height: 10%;
-    padding-top: 2px;
+    height: 5vh;
     box-shadow: 0 -4px 4px rgb(159, 175, 175);
     text-align: center;
     background-color: azure;
-}
-
-.indexfooter p {
-    font-size: 8rel;
-    color: rgb(0, 0, 0);
-}
-
-/* Game area style */
-
-#makemove {
-    font-family: inherit;
-    color: rgb(255, 0, 106);
-}
-
-.game-area {
-
-    padding-top: 10%;
-    max-width: 80%;
-    display: flex;
-
-}
-
-.buttons-div {
-    padding-top: .1rem;
-    padding-bottom: .1rem;
-    display: block;
-
-
-}
-
-.player {
-    padding-top: .1rem;
-    float: left;
-    margin-left: 5%;
-}
-
-.opponent {
-    padding-top: .1rem;
-    float: right;
-    margin-right: 5%;
-}
-
-#player-image {
-    max-width: 40%;
-}
-
-#opponent-image {
-    max-width: 40%;
 }
