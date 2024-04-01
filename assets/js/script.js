@@ -1,3 +1,7 @@
+document.getElementById('startGame').addEventListener('click', function() {
+    playGame();
+});
+
 const game = () => {
     let pScore = 0;
     let oScore = 0;
