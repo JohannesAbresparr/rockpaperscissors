@@ -2,6 +2,7 @@ const game = () => {
     let pScore = 0;
     let oScore = 0;
 
+
     const playGame = () => {
         const options = document.querySelectorAll('.options button');
         const playerChoice = document.querySelector('.playerchoice');
@@ -35,7 +36,7 @@ const updateScore = () => {
 };
 
 
-    const compareChoises = (playerChoice, opponentChoice) => {
+    const compareChoices = (playerChoice, opponentChoice) => {
         const message = document.querySelector('.message');
         if (playerChoice === opponentChoice){
             message.textContent = "It's draw!";
